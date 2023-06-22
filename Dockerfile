@@ -5,6 +5,8 @@ RUN mkdir /app
 COPY package.json /app
 COPY . /app
 
+WORKDIR /app
+
 RUN yarn
 
 CMD ["yarn", "start"]
